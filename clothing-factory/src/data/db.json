@@ -1,0 +1,456 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@clothingfactory.com",
+      "password": "admin123",
+      "name": "مدير النظام",
+      "role": "admin",
+      "phone": "+21153306833",
+      "address": "القاهرة، مصر"
+    },
+    {
+      "id": "2",
+      "email": "customer@example.com",
+      "password": "customer123",
+      "name": "عميل تجريبي",
+      "role": "customer",
+      "phone": "+201987654321",
+      "address": "الإسكندرية، مصر"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "قميص قطني كلاسيكي",
+      "description": "قميص قطني عالي الجودة بتصميم كلاسيكي يناسب جميع المناسبات",
+      "price": 150,
+      "category": "قمصان",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أبيض", "أزرق", "رمادي"],
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xhc3NpYyUyMGNvdHRvbiUyMHNoaXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+      "stock": 50,
+      "isTrending": true,
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "2",
+      "name": "بنطلون جينز",
+      "description": "بنطلون جينز مريح ومتين بتصميم عصري",
+      "price": 200,
+      "category": "بناطيل",
+      "size": ["28", "30", "32", "34", "36"],
+      "colors": ["أزرق داكن", "أسود", "رمادي"],
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amVhbnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 30,
+      "isTrending": true,
+      "createdAt": "2024-01-10"
+    },
+    {
+      "id": "3",
+      "name": "فستان أنيق",
+      "description": "فستان أنيق ومريح للمناسبات الخاصة",
+      "price": 300,
+      "category": "فساتين",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أسود", "أحمر", "أزرق"],
+      "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWxlZ2FudCUyMGRyZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+      "stock": 25,
+      "isTrending": false,
+      "createdAt": "2024-01-20"
+    },
+    {
+      "id": "4",
+      "name": "جاكيت شتوي",
+      "description": "جاكيت شتوي دافئ وأنيق للطقس البارد",
+      "price": 400,
+      "category": "جاكيتات",
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["أسود", "بني", "رمادي"],
+      "image": "https://images.unsplash.com/photo-1551028719-001c4d5d8b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ludGVyJTIwamFja2V0fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+      "stock": 20,
+      "isTrending": true,
+      "createdAt": "2024-01-05"
+    },
+    {
+      "id": "5",
+      "name": "تيشيرت بولو",
+      "description": "تيشيرت بولو مريح للاستخدام اليومي",
+      "price": 120,
+      "category": "تيشيرتات",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أبيض", "أزرق", "أخضر", "أحمر"],
+      "image": "https://images.unsplash.com/photo-1583743814966-8936f37f0e71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9sbyUyMHQtc2hpcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 60,
+      "isTrending": false,
+      "createdAt": "2024-01-12"
+    },
+    {
+      "id": "6",
+      "name": "تنورة قصيرة",
+      "description": "تنورة قصيرة أنيقة للنساء",
+      "price": 180,
+      "category": "تنانير",
+      "size": ["S", "M", "L"],
+      "colors": ["أسود", "أزرق", "أحمر"],
+      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcnQlMjBza2lydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 35,
+      "isTrending": true,
+      "createdAt": "2024-01-18"
+    },
+    {
+      "id": "7",
+      "name": "تيشيرت رياضي",
+      "description": "تيشيرت رياضي مريح مصنوع من مواد تنفسية للتمارين الرياضية",
+      "price": 130,
+      "category": "تيشيرتات",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أسود", "أزرق", "أخضر"],
+      "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BvcnRzJTIwdC1zaGlydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 45,
+      "isTrending": true,
+      "createdAt": "2024-01-22"
+    },
+    {
+      "id": "8",
+      "name": "بنطال رسمي",
+      "description": "بنطال رسمي أنيق مصنوع من قماش عالي الجودة للمناسبات الرسمية",
+      "price": 250,
+      "category": "بناطيل",
+      "size": ["28", "30", "32", "34"],
+      "colors": ["أسود", "رمادي", "بني"],
+      "image": "https://images.unsplash.com/photo-1591195853828-11f92f3a95f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9ybWFsJTIwcGFudHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 25,
+      "isTrending": false,
+      "createdAt": "2024-01-16"
+    },
+    {
+      "id": "9",
+      "name": "فستان صيفي",
+      "description": "فستان صيفي خفيف ومريح بتصميم أنيق للأيام الحارة",
+      "price": 220,
+      "category": "فساتين",
+      "size": ["S", "M", "L"],
+      "colors": ["أبيض", "وردي", "أزرق فاتح"],
+      "image": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 40,
+      "isTrending": true,
+      "createdAt": "2024-01-28"
+    },
+    {
+      "id": "10",
+      "name": "جاكيت جلدي",
+      "description": "جاكيت جلدي أصلي بتصميم كلاسيكي للمظهر الجريء",
+      "price": 550,
+      "category": "جاكيتات",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أسود", "بني"],
+      "image": "https://images.unsplash.com/photo-1551537486-80617babc18d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGVhdGhlciUyMGphY2tldHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 15,
+      "isTrending": true,
+      "createdAt": "2024-01-08"
+    },
+    {
+      "id": "11",
+      "name": "قميص أنيق",
+      "description": "قميص أنيق بأكمام طويلة مناسب للعمل والمناسبات اليومية",
+      "price": 170,
+      "category": "قمصان",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أزرق", "أبيض", "أسود"],
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWxlZ2FudCUyMHNoaXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+      "stock": 55,
+      "isTrending": false,
+      "createdAt": "2024-01-14"
+    },
+    {
+      "id": "12",
+      "name": "تنورة طويلة",
+      "description": "تنورة طويلة أنيقة مصنوعة من قماش ناعم للمناسبات الرسمية",
+      "price": 210,
+      "category": "تنانير",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أسود", "رمادي", "أزرق"],
+      "image": "https://images.unsplash.com/photo-1602293589930-45aad59da6ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9uZyUyMHNraXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+      "stock": 28,
+      "isTrending": true,
+      "createdAt": "2024-01-26"
+    },
+    {
+      "id": "13",
+      "name": "تيشيرت كاجوال",
+      "description": "تيشيرت كاجوال مريح بتصميم بسيط للاستخدام اليومي",
+      "price": 110,
+      "category": "تيشيرتات",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أبيض", "أسود", "أصفر"],
+      "image": "https://images.unsplash.com/photo-1503342217505-a9235b2f8e8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FzdWFsJTIwdC1zaGlydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 50,
+      "isTrending": false,
+      "createdAt": "2024-01-30"
+    },
+    {
+      "id": "14",
+      "name": "بنطلون رياضي",
+      "description": "بنطلون رياضي مرن ومناسب للتمارين الرياضية",
+      "price": 180,
+      "category": "بناطيل",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أسود", "أزرق", "رمادي"],
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BvcnQlMjBwYW50c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 40,
+      "isTrending": true,
+      "createdAt": "2024-02-01"
+    },
+    {
+      "id": "15",
+      "name": "فستان عشاء",
+      "description": "فستان عشاء فاخر بتصميم راقي للمناسبات الرسمية",
+      "price": 450,
+      "category": "فساتين",
+      "size": ["S", "M", "L"],
+      "colors": ["أحمر", "أسود", "ذهبي"],
+      "image": "https://images.unsplash.com/photo-1533636724327-136773e5f1e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlubmVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 20,
+      "isTrending": true,
+      "createdAt": "2024-02-03"
+    },
+    {
+      "id": "16",
+      "name": "جاكيت صيفي",
+      "description": "جاكيت صيفي خفيف بتصميم عصري",
+      "price": 300,
+      "category": "جاكيتات",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أبيض", "أزرق فاتح", "رمادي"],
+      "image": "https://images.unsplash.com/photo-1503342212237-820e5a4eb0f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VtbWVyJTIwamFja2V0fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+      "stock": 35,
+      "isTrending": false,
+      "createdAt": "2024-02-05"
+    },
+    {
+      "id": "17",
+      "name": "قميص قصير الأكمام",
+      "description": "قميص قصير الأكمام مريح للصيف",
+      "price": 130,
+      "category": "قمصان",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أبيض", "أخضر", "أحمر"],
+      "image": "./Assets/قميص نص كم.avif",
+      "stock": 60,
+      "isTrending": true,
+      "createdAt": "2024-02-07"
+    },
+    {
+      "id": "18",
+      "name": "تنورة متوسطة الطول",
+      "description": "تنورة متوسطة الطول بتصميم عصري",
+      "price": 190,
+      "category": "تنانير",
+      "size": ["S", "M", "L"],
+      "colors": ["أسود", "أزرق", "أخضر"],
+      "image": "https://images.unsplash.com/photo-1600585154526-990d4371d7d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaXVtJTIwbGVuZ3RoJTIwc2tpcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 30,
+      "isTrending": true,
+      "createdAt": "2024-02-09"
+    },
+    {
+      "id": "19",
+      "name": "هودي شتوي",
+      "description": "هودي شتوي دافئ بتصميم عصري",
+      "price": 280,
+      "category": "جاكيتات",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أسود", "رمادي", "أخضر"],
+      "image": "https://images.unsplash.com/photo-1600585152281-5e5f8379a6d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ludGVyJTIwaG9vZGllfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+      "stock": 25,
+      "isTrending": true,
+      "createdAt": "2024-02-10"
+    },
+    {
+      "id": "20",
+      "name": "تيشيرت مطبوع",
+      "description": "تيشيرت كاجوال بطبعة فريدة للمظهر الشبابي",
+      "price": 140,
+      "category": "تيشيرتات",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أسود", "أبيض", "أحمر"],
+      "image": "https://images.unsplash.com/photo-1516849677043-ef510c5cefe1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJpbnRlZCUyMHQtc2hpcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 45,
+      "isTrending": false,
+      "createdAt": "2024-02-12"
+    },
+    {
+      "id": "21",
+      "name": "بنطلون كاجوال",
+      "description": "بنطلون كاجوال مريح للاستخدام اليومي",
+      "price": 190,
+      "category": "بناطيل",
+      "size": ["28", "30", "32", "34"],
+      "colors": ["أزرق", "أسود", "خاكي"],
+      "image": "https://images.unsplash.com/photo-1600585154306-3b62e8a5f7a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FzdWFsJTIwcGFudHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 35,
+      "isTrending": true,
+      "createdAt": "2024-02-14"
+    },
+    {
+      "id": "22",
+      "name": "فستان كاجوال",
+      "description": "فستان كاجوال خفيف للاستخدام اليومي",
+      "price": 200,
+      "category": "فساتين",
+      "size": ["S", "M", "L"],
+      "colors": ["أبيض", "أصفر", "أخضر"],
+      "image": "https://images.unsplash.com/photo-1503342217506-2f7a5f0a0e1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FzdWFsJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 40,
+      "isTrending": false,
+      "createdAt": "2024-02-16"
+    },
+    {
+      "id": "23",
+      "name": "جاكيت قطني",
+      "description": "جاكيت قطني خفيف للطقس المعتدل",
+      "price": 320,
+      "category": "جاكيتات",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أزرق", "أسود", "أحمر"],
+      "image": "https://images.unsplash.com/photo-1600585154457-6e2f9e8f90e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y290dG9uJTIwamFja2V0fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+      "stock": 30,
+      "isTrending": true,
+      "createdAt": "2024-02-18"
+    },
+    {
+      "id": "24",
+      "name": "قميص حريري",
+      "description": "قميص حريري فاخر للمناسبات الرسمية",
+      "price": 250,
+      "category": "قمصان",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أبيض", "أسود", "ذهبي"],
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsaCUyMHNoaXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+      "stock": 20,
+      "isTrending": true,
+      "createdAt": "2024-02-20"
+    },
+    {
+      "id": "25",
+      "name": "تنورة بقصة A",
+      "description": "تنورة بقصة A أنيقة ومريحة",
+      "price": 170,
+      "category": "تنانير",
+      "size": ["S", "M", "L"],
+      "colors": ["أحمر", "أزرق", "أسود"],
+      "image": "https://images.unsplash.com/photo-1600585154526-990d4371d7d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QS1saW5lJTIwc2tpcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 35,
+      "isTrending": false,
+      "createdAt": "2024-02-22"
+    },
+    {
+      "id": "26",
+      "name": "تيشيرت طويل",
+      "description": "تيشيرت طويل مريح للارتداء اليومي",
+      "price": 150,
+      "category": "تيشيرتات",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أسود", "رمادي", "أخضر"],
+      "image": "https://images.unsplash.com/photo-1516849677043-ef510c5cefe1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9uZyUyMHQtc2hpcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 50,
+      "isTrending": true,
+      "createdAt": "2024-02-24"
+    },
+    {
+      "id": "27",
+      "name": "بنطلون قصير",
+      "description": "بنطلون قصير مريح للصيف",
+      "price": 160,
+      "category": "بناطيل",
+      "size": ["S", "M", "L", "XL"],
+      "colors": ["أخضر", "أزرق", "أبيض"],
+      "image": "https://images.unsplash.com/photo-1600585154306-3b62e8a5f7a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcnQlMjBwYW50c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "stock": 40,
+      "isTrending": false,
+      "createdAt": "2024-02-26"
+    },
+    {
+      "id": "28",
+      "name": "فستان طويل",
+      "description": "فستان طويل أنيق للمناسبات الخاصة",
+      "price": 350,
+      "category": "فساتين",
+      "size": ["S", "M", "L"],
+      "colors": ["أسود", "أحمر", "أبيض"],
+      "image": "https://images.unsplash.com/photo-1533636724327-136773e5f1e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9uZyUyMGRyZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+      "stock": 25,
+      "isTrending": true,
+      "createdAt": "2024-02-28"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": "2",
+      "items": [
+        {
+          "productId": "1",
+          "quantity": 2,
+          "size": "M",
+          "color": "أبيض"
+        }
+      ],
+      "totalAmount": 300,
+      "status": "processing",
+      "orderType": "purchase",
+      "createdAt": "2024-01-25",
+      "notes": "طلب عاجل"
+    }
+  ],
+  "manufacturingOrders": [
+    {
+      "id": "1",
+      "userId": "2",
+      "productName": "قميص مخصص",
+      "description": "قميص قطني بتصميم مخصص",
+      "quantity": 100,
+      "size": "M",
+      "color": "أزرق",
+      "fabricType": "قطن 100%",
+      "specialRequirements": "طباعة شعار الشركة",
+      "estimatedPrice": 8000,
+      "status": "pending",
+      "createdAt": "2024-01-25",
+      "estimatedDelivery": "2024-02-15"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "قمصان",
+      "description": "مجموعة متنوعة من القمصان للرجال والنساء"
+    },
+    {
+      "id": "2",
+      "name": "بناطيل",
+      "description": "بناطيل جينز وكلاسيكية"
+    },
+    {
+      "id": "3",
+      "name": "فساتين",
+      "description": "فساتين أنيقة للمناسبات المختلفة"
+    },
+    {
+      "id": "4",
+      "name": "جاكيتات",
+      "description": "جاكيتات شتوية وصيفية"
+    },
+    {
+      "id": "5",
+      "name": "تيشيرتات",
+      "description": "تيشيرتات مريحة للاستخدام اليومي"
+    },
+    {
+      "id": "6",
+      "name": "تنانير",
+      "description": "تنانير قصيرة وطويلة"
+    }
+  ]
+}
